@@ -1,6 +1,9 @@
 package test.java.com.example;
 
 import org.junit.jupiter.api.Test;
+
+import src.main.java.com.example.Factorial;
+
 import static org.junit.jupiter.api.Assertions.*;
 class FactorialTest {
 @Test
