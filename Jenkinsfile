@@ -1,14 +1,9 @@
-groovy
 pipeline {
     agent any
-    tools {
-        maven 'Maven 3.8.7'    // Nombre del Maven configurado en Jenkins
-        jdk 'Java 21'          // Nombre del JDK configurado
-    }
     stages {
         stage('Clonar') {
             steps {
-                git 'https://github.com/Prisci723/FactorialApp'
+                git branch: "main", url: 'https://github.com/Prisci723/FactorialApp'
             }
         }
         stage('Compilar') {
