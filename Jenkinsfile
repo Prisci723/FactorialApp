@@ -2,8 +2,8 @@ groovy
 pipeline {
     agent any
     tools {
-        maven 'Maven 3.8.5'    // Nombre del Maven configurado en Jenkins
-        jdk 'Java 11'          // Nombre del JDK configurado
+        maven 'Maven 3.8.7'    // Nombre del Maven configurado en Jenkins
+        jdk 'Java 21'          // Nombre del JDK configurado
     }
     stages {
         stage('Clonar') {
